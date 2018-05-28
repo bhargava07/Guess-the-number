@@ -22,7 +22,7 @@ while True:
         continue
     
     # here we compare the player's guess to our number
-    if guess == num:
+    if guess == x:
         print(f'CONGRATULATIONS, YOU GUESSED IT IN ONLY {len(guesses)} GUESSES!!')
         break
         
@@ -33,13 +33,13 @@ while True:
     # and brings us down to the second section
     
     if guesses[-2]:  
-        if abs(num-guess) < abs(num-guesses[-2]):
+        if abs(x-guess) < abs(x-guesses[-2]):
             print('WARMER!')
         else:
             print('COLDER!')
    
     else:
-        if abs(num-guess) <= 10:
+        if abs(x-guess) <= 10:
             print('WARM!')
         else:
             print('COLD!')
